@@ -21,24 +21,28 @@
 <style scoped>
 nav {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  box-shadow: 0 0.04rem var(--nav-color);
 
   font-size: 1.5rem;
 
   background-color: var(--dark-gray);
 
   a {
+    padding: .75rem 1.5rem;
+
     font-weight: 700;
     text-decoration: none;
 
     color: var(--light-gray);
 
-    transition: color .15s ease-in-out;
+    transition: color .25s ease-in-out;
 
     &.router-link-active {
-      color: lightblue;
+      color: var(--nav-color);
     }
   }
 }
