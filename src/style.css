@@ -1,0 +1,34 @@
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+  --dark-gray: #474747;
+  --light-gray: #e5e5e5;
+}
+
+body {
+
+  color: var(--light-gray);
+  background-color: var(--dark-gray);
+}
+
+#app {
+  place-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
