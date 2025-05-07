@@ -1,19 +1,19 @@
 <template>
     <section id="contact">
-        <form>
-            <label for="name">Name</label>
+        <form @submit.prevent="">
+            <label for="name">Name:</label>
             <input type="text" id="name">
 
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input type="email" id="email">
 
-            <label for="phone">Phone Number</label>
+            <label for="phone">Phone Number:</label>
             <input type="tel" id="phone">
 
-            <label for="message">Your message</label>
+            <label for="message">Your message:</label>
             <textarea id="message" placeholder="Type here..."></textarea>
 
-            <button type="reset">Remove all</button>
+            <button type="reset">Clear</button>
             <button type="submit">Submit</button>
         </form>
     </section>
@@ -24,7 +24,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-form {
-    display: grid;
+#contact {
+    max-width: 60rem;
+    width: 100%;
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: .5rem 1rem;
+        
+        #message {
+            min-height: 5rem;
+        }
+    }
 }
 </style>
