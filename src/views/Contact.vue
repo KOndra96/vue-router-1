@@ -1,5 +1,5 @@
 <template>
-    <section id="contact">
+    <div id="contact">
         <form @submit.prevent="">
             <label for="name">Name:</label>
             <input type="text" id="name">
@@ -16,7 +16,7 @@
             <button type="reset">Clear</button>
             <button type="submit">Submit</button>
         </form>
-    </section>
+    </div>
 </template>
 <script>
 export default {
@@ -25,9 +25,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 #contact {
-    max-width: 60rem;
-    width: 100%;
-
     form {
         display: grid;
         grid-template-columns: 1fr 5fr;
