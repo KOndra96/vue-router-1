@@ -37,7 +37,6 @@
             <p>© 2025 Our Company | <a href="contact.html">Contact Us</a></p>
         </footer>
     </div>
-
 </template>
 <script>
 export default {
@@ -45,7 +44,88 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-figure img {
-    max-width: 100%;
+#gallery {
+    header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+
+        h1 {
+            font-size: 2.25rem;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #eeeeee;
+        }
+    }
+
+    section {
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #666;
+            padding-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        figure {
+            margin: 1.5rem 1rem;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            max-width: 300px;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            img {
+                max-width: 100%;
+                border-radius: 0.4rem;
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+
+            figcaption {
+                font-size: 1rem;
+                color: #f0f0f0;
+            }
+        }
+
+        article {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 1rem;
+        }
+    }
+
+    footer {
+        text-align: center;
+        border-top: 1px solid #555;
+        padding-top: 2rem;
+        color: #cccccc;
+        margin-top: 4rem;
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            text-decoration: underline;
+            color: #f0f0f0;
+
+            &:hover {
+                text-decoration: none;
+                opacity: 0.85;
+            }
+        }
+    }
 }
 </style>
